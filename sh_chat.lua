@@ -26,7 +26,7 @@ local spawnTurretCommand = {
         for i, v in ipairs(friends:GetPlayers()) do
 
             ply.Turret:AddEntityRelationship( v, D_LI, 99 )
-            PrintTable(friends:GetPlayers())
+            --PrintTable(friends:GetPlayers()) -- for debugging
 
         end
         ply:Notify("Turret deployed!")
